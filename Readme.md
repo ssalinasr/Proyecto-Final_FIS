@@ -21,9 +21,9 @@ extrema ideal para proyectos con tiempos tan cortos como este.
 
 ## DataSet a utiizar
 
-	* life expentancy at birth (desde 1960 hasta 2015)
-	* 14728 rows, 6 cols (Country, Country Code, Region, Income Group, Year, Life expentancy[número decimal])
-	  https://www.kaggle.com/shitalgaikwad123/life-expectancy-at-birth-for-different-countries 
+* life expentancy at birth (desde 1960 hasta 2015)
+* 14728 rows, 6 cols (Country, Country Code, Region, Income Group, Year, Life expentancy[número decimal])	  
+* _Obtenido de_: https://www.kaggle.com/shitalgaikwad123/life-expectancy-at-birth-for-different-countries 
 	
 <hr>
 
@@ -68,7 +68,8 @@ Clase ChartManage:
     *Realiza la ejecución de los métodos encargados de generar las gráficas.
   
  <hr> 
-  ----------------------------------------------------------  
+  ----------------------------------------------------------
+  
 ## Dependencias
 
 * <code> Pandas </code>
