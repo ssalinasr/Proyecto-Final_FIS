@@ -9,9 +9,15 @@
 * _Julian Andres Sanchez Rivera - 20181020169_
 * _Sebastian Salinas Rodriguez - 20181020058_
 
+## ------------------------------------------  Descripcion  --------------------------------
+
+El presente repositorio, contiene el documentado de los procesos llevados a cabo para el desarrollo de un 
+entorno web y el uso de un compilado de datos, generando una interpretacion grafica, aparte de las visualizacion
+interactiva de los datos por medio de graficas, se busca aplicar cierta metodologia para el desarrollo de dicho
+entorno, especificamente hablamos de una de las metodologias agiles mas utilizadas como lo es la programacion 
+extrema ideal para proyectos con tiempos tan cortos como este.
 
 <hr>
-# ------------------------------------------  Descripcion  -----------------------------------------------
 
 ## DataSet a utiizar
 
@@ -20,7 +26,7 @@
 	
 <hr>
 
-## -------------------------------------------- Analisis ----------------------------------------------
+## -------------------------------------------- Analisis ----------------------------------
 
 **_Metodología a utilizar: Extreme Programming (XP)_**
 
