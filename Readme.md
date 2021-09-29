@@ -13,8 +13,7 @@ Metodología a utilizar: Extreme Programming (XP)
 Como usuario se desea:
 
     1. Cargar la información alojada en el dataset
-        - Dentro de la carga, se hace la filtración y limpie-
-        za del dataset.
+        - Dentro de la carga, se hace la filtración y limpieza del dataset.
     
     2. Realizar la visualización de los datos de acuerdo a
     las agrupaciones: región, ingresos, años.
@@ -26,8 +25,7 @@ Como usuario se desea:
         - Cambios en los valores durante el tiempo.
         - Mostrar información respecto a ese valor de esperanza.
         
-    4. Consultar la información de un país en particular, reali-
-    zando las mismas operaciones que para los agrupamientos.
+    4. Consultar la información de un país en particular, realizando las mismas operaciones que para los agrupamientos.
     
     5. Obtener  y viusalizar datos estadísticos descriptivos de la 
     información proveniente del dataset.
@@ -37,8 +35,7 @@ Como usuario se desea:
 ------------------------------- Clases definidas -----------------------------
 
 Clase WebApp:
-    *Encargada de la gestión de los procesos en entorno web, utili-
-    zando Flask.
+    *Encargada de la gestión de los procesos en entorno web, utilizando Flask.
     
 Clase DataManage:
     *Obtiene el dataset, genera el dataframe, y realiza la limpieza/
