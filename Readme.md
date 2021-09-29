@@ -9,7 +9,7 @@
 * _Julian Andres Sanchez Rivera - 20181020169_
 * _Sebastian Salinas Rodriguez - 20181020058_
 
-## ------------------------------------------  Descripcion  --------------------------------
+## --------------------  Descripcion  -------------------
 
 El presente repositorio, contiene el documentado de los procesos llevados a cabo para el desarrollo de un 
 entorno web y el uso de un compilado de datos, generando una interpretacion grafica, aparte de las visualizacion
@@ -23,10 +23,11 @@ extrema ideal para proyectos con tiempos tan cortos como este.
 
 	* life expentancy at birth (desde 1960 hasta 2015)
 	* 14728 rows, 6 cols (Country, Country Code, Region, Income Group, Year, Life expentancy[número decimal])
+	  https://www.kaggle.com/shitalgaikwad123/life-expectancy-at-birth-for-different-countries 
 	
 <hr>
 
-## -------------------------------------------- Analisis ----------------------------------
+## ---------------------- Analisis --------------------------
 
 **_Metodología a utilizar: Extreme Programming (XP)_**
 
@@ -55,7 +56,7 @@ Como usuario se desea:
     
 <hr>
 
-## ----------------------------------- Clases definidas ----------------------------------
+## -------------------- Clases definidas --------------------
 
 Clase WebApp:
     * Encargada de la gestión de los procesos en entorno web, utilizando Flask.
@@ -67,10 +68,11 @@ Clase ChartManage:
     *Realiza la ejecución de los métodos encargados de generar las gráficas.
   
  <hr> 
-  -----------------------------------------------------------------------------    
+  ----------------------------------------------------------  
 ## Dependencias
 
 * <code> Pandas </code>
 * <code> Matplotlib </code>
+* <code> Flask </code>
 
 _El objetivo de este proyecto es netamente educativo_
