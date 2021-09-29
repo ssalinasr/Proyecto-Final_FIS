@@ -35,11 +35,15 @@ extrema ideal para proyectos con tiempos tan cortos como este.
 
 Como usuario se desea:
 
-    1. Cargar la información alojada en el dataset
+    1. Leer la informacion que se encontraba alojada en el dataset
+    
         * Dentro de la carga, se hace la filtración y limpieza del dataset.
     
-    2. Realizar la visualización de los datos de acuerdo a
-    las agrupaciones: región, ingresos, años.
+    2. Realizar la visualización de los datos de acuerdo a las agrupaciones:
+    
+    	* Región.
+	* Ingresos
+	* Años.
         
     3. Obtener gráficos útiles de acuerdo a los agrupamientos como:
     
