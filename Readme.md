@@ -21,9 +21,9 @@ extrema ideal para proyectos con tiempos tan cortos como este.
 
 ## DataSet a utiizar
 
-* life expentancy at birth (desde 1960 hasta 2015)
-* 14728 rows, 6 cols (Country, Country Code, Region, Income Group, Year, Life expentancy[número decimal])	  
-* _Obtenido de_: https://www.kaggle.com/shitalgaikwad123/life-expectancy-at-birth-for-different-countries 
+* Life expentancy at birth (desde 1960 hasta 2015)
+  14728 rows, 6 cols (Country, Country Code, Region, Income Group, Year, Life expentancy[número decimal])	  
+  _Obtenido de_: https://www.kaggle.com/shitalgaikwad123/life-expectancy-at-birth-for-different-countries 
 	
 <hr>
 
@@ -59,13 +59,16 @@ Como usuario se desea:
 ## -------------------- Clases definidas --------------------
 
 Clase WebApp:
+
     * Encargada de la gestión de los procesos en entorno web, utilizando Flask.
     
 Clase DataManage:
+
     * Obtiene el dataset, genera el dataframe, y realiza la limpieza/ filtración de los datos.
     
 Clase ChartManage:
-    *Realiza la ejecución de los métodos encargados de generar las gráficas.
+
+    * Realiza la ejecución de los métodos encargados de generar las gráficas.
   
  <hr> 
   ----------------------------------------------------------
