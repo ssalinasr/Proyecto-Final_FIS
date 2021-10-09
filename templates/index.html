@@ -1,0 +1,51 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width", initial-scale=1.0>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/index.css') }}">
+    <Title>Inicio</Title>
+</head>
+<body>
+    <div>
+        <h1>Visualización de datos: Esperanza de vida mundial entre 1960 y 2015</h1>
+    </div>
+    <br>
+    <form method="POST" action="http://127.0.0.1:5000/grafica">
+    <label name="valor">Filtro aplicado: </label>
+    <br>
+        <select name="agrupar" aria-placeholder="Agrupación" width="250px">
+            <option value ="region">Región</option>
+            <option value ="ingresos">Ingresos</option>
+            <option value ="años">Años</option>
+        </select>
+        <br>
+        <label>Rango de tiempo: </label>
+        <br>
+        <input required type="number" name="iniaño" placeholder="Año Inicial" min="1960" max = "2015">
+        <br>
+        <input required type="number" name="finaño" placeholder="Año Final" min="1960" max = 2015>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form method="POST" action="http://127.0.0.1:5000/pais">
+        <label>País:</label>
+        <br>
+        <input required-type="text" name="pais" placeholder="pais seleccionado">
+        <br>
+        <label>Rango de tiempo: </label>
+        <br>
+        <input required type="number" name="iniaño" placeholder="Año Inicial" min="1960" max = "2015">
+        <br>
+        <input required type="number" name="finaño" placeholder="Año Final" min="1960" max = 2015>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form method="POST" action="http://127.0.0.1:5000/dataframe">
+        <label>Ver Dataset: </label>
+        <input type="submit" value="Ver dataset">
+    </form>
+
+</body>
+</html>

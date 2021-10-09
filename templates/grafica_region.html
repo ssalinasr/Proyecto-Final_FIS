@@ -1,0 +1,40 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width", initial-scale=1.0>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/graphics.css') }}">
+        <Title>Gráfica por región</Title>
+    </head>
+    <body>
+        <div>
+        <h1>Esperanza de vida por región</h1>
+        </div>
+        <br>
+        
+        <div>
+            <h2>Visualización de los datos asociados a la esperanza de vida mundial por región:</h2>
+            <h3>East Asia & Pacific: Este de Asia y pacífico</h3>
+            <h3>Europe & Central Asia: Europa y Asia Central</h3>
+            <h3>Latin America & Caribbean: Latinoamérica y Caribe</h3>
+            <h3>Middle East & North Africa: Medio Oriente y Norte de África</h3>
+            <h3>North America: Norteamérica</h3>
+            <h3>South Asia: Sur de Asia</h3>
+            <h3>Sub-Saharan Africa: África Sub-Sahariana</h3>
+        </div>
+        <br>
+
+        <div>
+        <img src="data:image/png;base64, {{  plot_url  }}">
+        </div>
+        <br>
+        {% for table in tables %}
+            {{ table|safe}}
+        <br>
+        <div>
+        {% endfor %}
+        {% for item in info_est %}
+        <li>{{ item }}</li> 
+        {% endfor %}
+        </div>
+    </body>
+</html>

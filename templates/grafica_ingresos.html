@@ -1,0 +1,38 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width", initial-scale=1.0>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/graphics.css') }}">
+        <Title>Gráfica por ingresos</Title>
+    </head>
+    <body>
+        <div>
+        <h1>Esperanza de vida por ingresos</h1>
+        </div>
+        <br>
+
+        <div>
+            <h2>Visualización de los datos asociados a la esperanza de vida mundial por ingresos económicos:</h2>
+            <h3>High Income: Altos Ingresos</h3>
+            <h3>Low Income: Bajos Ingresos</h3>
+            <h3>Lower Middle Income: Ingresos Medios-Bajos</h3>
+            <h3>Upper Middle Income: Ingresos Medios-Altos</h3>
+        </div>
+        <br>
+
+
+        <div>
+        <img src="data:image/png;base64, {{  plot_url  }}">
+        </div>
+        <br>
+        {% for table in tables %}
+            {{ table|safe}}
+        <br>
+        <div>
+        {% endfor %}
+        {% for item in info_est %}
+        <li>{{ item }}</li> 
+        {% endfor %}
+        </div>
+    </body>
+</html>

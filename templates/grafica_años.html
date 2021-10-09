@@ -1,0 +1,33 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content = "width=device-width", initial-scale=1.0>
+        <link rel="stylesheet" href="{{ url_for('static', filename='/graphics.css') }}">
+        <Title>Gráfica por años</Title>
+    </head>
+    <body>
+        <div>
+        <h1>Esperanza de vida por años</h1>
+        </div>
+        <br>
+        <div>
+            <h2>Visualización de los datos asociados a la esperanza de vida mundial por años:</h2>
+            <h3>Cualquier rango entre 1960 y 2005: Por ejemplo (1999-2009)</h3>
+        </div>
+        <br>
+
+        <div>
+        <img src="data:image/png;base64, {{  plot_url  }}">
+        </div>
+        <br>
+        {% for table in tables %}
+            {{ table|safe}}
+        <br>
+        <div>
+        {% endfor %}
+        {% for item in info_est %}
+        <li>{{ item }}</li> 
+        {% endfor %}
+        </div>
+    </body>
+</html>

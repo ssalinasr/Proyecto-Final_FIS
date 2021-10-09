@@ -54,25 +54,42 @@ class DataManage:
         return self.dat
     
     def data_estadistica_pais(self):
-        print('Esperanza de vida máxima: ')
-        print(self.dat['Life Expectancy'].max())
-        print()
-        print('Año: ')
-        print(self.dat['Year'][self.dat["Life Expectancy"] == self.dat['Life Expectancy'].max()])
-        print()
-        print('Esperanza de vida mínima: ')
-        print(self.dat['Life Expectancy'].min())
-        print()
-        print('Año: ')
-        print(self.dat['Year'][self.dat["Life Expectancy"] == self.dat['Life Expectancy'].min()])
-        print()
-        print(self.dat["Life Expectancy"].describe())
-        
+
+        lbl = 'Esperanza de vida máxima: \n'
+        max_e = str(self.dat['Life Expectancy'].max()) + "\n"
+        lbl_a = 'año: \n'
+        año_e = str(self.dat['Year'][self.dat["Life Expectancy"] == self.dat['Life Expectancy'].max()])+"\n"
+        lbl_m = 'Esperanza de vida mínima: \n'
+        min_e = str(self.dat['Life Expectancy'].min())+"\n"
+        lbl_f = 'año: \n'
+        año_m = str(self.dat['Year'][self.dat["Life Expectancy"] == self.dat['Life Expectancy'].min()])+"\n"
+        desc = str(self.dat["Life Expectancy"].describe())
+
+        list = []
+        list.append(lbl)
+        list.append(max_e)
+        list.append(lbl_a)
+        list.append(año_e)
+        list.append(lbl_m)
+        list.append(min_e)
+        list.append(lbl_f)
+        list.append(año_m)
+        list.append(desc)
+
+        return list
+
     def data_estadistica_agrupacion(self):
-        print('Esperanza de vida máxima: ')
-        print(self.dat['Life Expectancy'].max())
-        print()
-        print('Esperanza de vida mínima: ')
-        print(self.dat['Life Expectancy'].min())
-        print()
-        print(self.dat["Life Expectancy"].describe())
+        lbl = 'Esperanza de vida máxima: \n'
+        max_e = str(self.dat['Life Expectancy'].max()) + "\n"
+        lbl_m = 'Esperanza de vida mínima: \n'
+        min_e = str(self.dat['Life Expectancy'].min())+"\n"
+        desc = str(self.dat["Life Expectancy"].describe())
+
+        list = []
+        list.append(lbl)
+        list.append(max_e)
+        list.append(lbl_m)
+        list.append(min_e)
+        list.append(desc)
+
+        return list
