@@ -1,10 +1,11 @@
 <h1>Proyecto Final Fundamentos Ingenieria de Software</h1>
 
-<h2>Integrantes:
+<h4>Integrantes:
 
 - Julian Andrés Sánchez Rivera - 20181020169
 - Sebastián Salinas Rodríguez - 20181020058
-	</h2>
+	
+	</h4>
 
 -------------------------- DataSet a Utilizar ---------------------------------
 
