@@ -1,3 +1,10 @@
+#Proyecto Final Fundamentos Ingenieria de Software
+
+Integrantes:
+
+- Julian Andrés Sánchez Rivera - 20181020169
+- Sebastián Salinas Rodríguez - 20181020058
+
 -------------------------- DataSet a Utilizar ---------------------------------
 
 	-life expentancy at birth (desde 1960 hasta 2015)
@@ -103,22 +110,22 @@ Clase ChartManage:
 
 ------------------------------- Librerías y recursos --------------------------
 
-*Numpy
-*matplotlib
-*pandas
-*flask
+	*Numpy
+	*matplotlib
+	*pandas
+	*flask
 
-*Para la ejecución de la aplicación, se requiere de la creación de un entorno virtual
-'venv', cuya instalación para vscode se encuentra aqui:
- https://code.visualstudio.com/docs/python/tutorial-flask
- 
- *Dentro del entorno virtual, es necesario hacer instalación de las librerías mencionadas
- al inicio. Dicha instalación se realiza con el comando:
- 
- python -m pip install <libreria>
- 
- *ejecución de flask:
- python -m flask run
+	*Para la ejecución de la aplicación, se requiere de la creación de un entorno virtual
+	'venv', cuya instalación para vscode se encuentra aqui:
+	https://code.visualstudio.com/docs/python/tutorial-flask
+
+	*Dentro del entorno virtual, es necesario hacer instalación de las librerías mencionadas
+	al inicio. Dicha instalación se realiza con el comando:
+
+	python -m pip install <libreria>
+
+	*ejecución de flask:
+	python -m flask run
  
  
   ----------------------------------------------------------------------------- 
