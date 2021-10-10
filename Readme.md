@@ -7,8 +7,6 @@
 	
 	</h4>
 	
-<h3> Aviso: faltan las pruebas </h3>
-
 <h2> DataSet a Utilizar </h2>
 
 	-life expentancy at birth (desde 1960 hasta 2015)
