@@ -40,13 +40,63 @@ Clase WebApp:
     *Encargada de la gestión de los procesos en entorno web, utili-
     zando Flask.
     
+    Métodos:
+    
+    *hello(): muestra la página índice (index.html)
+    *procesar_pais(): muestra la página donde se visualiza la información si se seleccionó un país 
+    en específico (gráfica_país.html)
+    *mostrar_df(): muestra la página donde se carga el dataframe para su visualización 
+    (dataframe.html).
+    *procesar(): muestra la página donde se visualiza la información de acuerdo a la agrupación
+    seleccionada: región (grafica_region.html), ingresos (grafica_ingresos.html), año 
+    (grafica_año.html).
+    
+    
 Clase DataManage:
     *Obtiene el dataset, genera el dataframe, y realiza la limpieza/
     filtración de los datos.
+    
+    Métodos:
+    
+    *_init_(): carga el dataset desde el archio excel (xlsx)
+    *eliminar_na(): remueve las filas con valores 'na' dentro del dataset
+    *redondear_le(): redondea los valores de 'Life expectancy' dentro del dataset
+    *filtro_años_max(year): filtra el dataframe desde la fecha incial (1960) hasta la fecha
+    indicada por 'year'.
+    *filtro_años_min(year): filtra el dataframe desde la fecha inicial indicada por 'year'
+    hasta la fecha final máxima (2015).
+    *filtro_años_rango(year_min, year_max): filtra el dataframe desde la fecha incial indicada
+    por year_min hasta 	la fecha máxima indicada por 'year_max'.
+    *agrupar_por_region(): realiza la agrupación de los datos según su región, con la función
+    groupby del dataframe.
+    *agrupar_por_ingresos(): realiza la agrupación de los datos según sus ingresos, con la función
+    groupby del dataframe. 
+    *agrupar_por_años(): realiza la agrupación de los datos según los años, con la función
+    groupby del dataframe.
+    *obtener_pais(country): obtiene las filas del dataframe, donde 'Country' es igual al país 	       seleccionado por la variable 'country'.
+    *obtener_dataset(): obtiene el dataframe actual.
+    *data_estadistica_pais(): obtiene la información estadística del dataframe creado si se 
+    seleccionó un país.
+    *data_estadistica_agrupacion(): obtiene la información estadística del dataframe creado si se 
+    seleccionó una agrupación (región, ingresos, años).
     
 Clase ChartManage:
     *Realiza la ejecución de los métodos encargados de generar las
     gráficas.
     
+    Metodos:
+    
+    *_init_(data): Obtiene y carga el dataframe creado.
+    *generar_grafica_pais(country): genera el grafico de barras para la selección
+    por país específico. country = pais seleccionado.
+    *generar_grafica_ing(): genera el grafico de barras para la selección
+    por ingresos económicos.
+    *generar_grafica_reg(): genera el grafico de barras para la selección
+    por región.
+    *generar_grafica_año(): genera el grafico de barras para la selección
+    por un rango de años específico.
+    *Cada método retorna la url de la imagen asociada a la gráfica en formato
+    png.
+   
   -----------------------------------------------------------------------------    
 
