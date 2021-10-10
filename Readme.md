@@ -73,7 +73,8 @@ Clase DataManage:
     groupby del dataframe. 
     *agrupar_por_años(): realiza la agrupación de los datos según los años, con la función
     groupby del dataframe.
-    *obtener_pais(country): obtiene las filas del dataframe, donde 'Country' es igual al país 	       seleccionado por la variable 'country'.
+    *obtener_pais(country): obtiene las filas del dataframe, donde 'Country' es igual al país 
+    seleccionado por la variable 'country'.
     *obtener_dataset(): obtiene el dataframe actual.
     *data_estadistica_pais(): obtiene la información estadística del dataframe creado si se 
     seleccionó un país.
@@ -100,3 +101,26 @@ Clase ChartManage:
    
   -----------------------------------------------------------------------------    
 
+------------------------------- Librerías y recursos --------------------------
+
+*Numpy
+*matplotlib
+*pandas
+*flask
+
+*Para la ejecución de la aplicación, se requiere de la creación de un entorno virtual
+'venv', cuya instalación para vscode se encuentra aqui:
+ https://code.visualstudio.com/docs/python/tutorial-flask
+ 
+ *Dentro del entorno virtual, es necesario hacer instalación de las librerías mencionadas
+ al inicio. Dicha instalación se realiza con el comando:
+ 
+ python -m pip install <libreria>
+ 
+ *ejecución de flask:
+ python -m flask run
+ 
+ 
+  ----------------------------------------------------------------------------- 
+
+*El propósito de esta aplicación es netamente educativo.
