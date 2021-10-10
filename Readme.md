@@ -112,6 +112,28 @@ Clase ChartManage:
     png.
    
   -----------------------------------------------------------------------------    
+  
+Clase test_app:
+    *Realiza la ejecución de las pruebas unitarias asociadas a la aplicación y 
+    a su funcionamiento.
+    
+    Metodos:
+    
+    *setUp(): realiza la configuración necesaria para realizar las pruebas.
+    *test_limpieza(): test sobre la limpieza del dataset.
+    *test_agrupacion_region(): test sobre el método agrupar_por_region()
+    *test_agrupacion_ingresos(): test sobre el método agrupar_por_ingresos()
+    *test_agrupacion_años(): test sobre el método agrupar_por_años()
+    *test_pais(): test sobre el método obtener_pais()
+    *test_index(): test de respuesta satisfactoria sobre la página index.html (2000)
+    *test_not_found(): test de respuesta elemento no encontrado (404)
+    *test_dataframe_page(): test de respuesta satisfactoria sobre la página dataframe.html (2000)
+    *test_pais_page(): test de respuesta satisfactoria sobre la página grafica_pais.html (2000)
+    *test_region_page(): test de respuesta satisfactoria sobre la página grafica_region.html (2000)
+    *test_ingresos_page(): test de respuesta satisfactoria sobre la página grafica_ingresos.html (2000)
+    *test_años_page(): test de respuesta satisfactoria sobre la página grafica_años.html (2000)
+    
+  -----------------------------------------------------------------------------    
 
 <h2>Librerias y recursos </h2>
 
@@ -119,6 +141,8 @@ Clase ChartManage:
 	*matplotlib
 	*pandas
 	*flask
+	*unittest
+	*beavis
 
 	*Para la ejecución de la aplicación, se requiere de la creación de un entorno virtual
 	'venv', cuya instalación para vscode se encuentra aqui:
@@ -131,8 +155,10 @@ Clase ChartManage:
 
 	*ejecución de flask:
 	python -m flask run
- 
- 
+	
+	*ejecución de las pruebas:
+	python -m unittest
+	
   ----------------------------------------------------------------------------- 
 
 *El propósito de esta aplicación es netamente educativo.
