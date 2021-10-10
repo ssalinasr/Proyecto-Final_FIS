@@ -6,8 +6,10 @@
 - Sebastián Salinas Rodríguez - 20181020058
 	
 	</h4>
+	
+<h3> Aviso: faltan las pruebas </h3>
 
--------------------------- DataSet a Utilizar ---------------------------------
+<h2> DataSet a Utilizar </h2>
 
 	-life expentancy at birth (desde 1960 hasta 2015)
 	-14728 rows, 6 cols (Country, Country Code, Region, Income Group, Year, Life expentancy[número decimal])
@@ -15,7 +17,7 @@
 ------------------------------------------------------------------------------
 
 
------------------------- Historias de Usuario --------------------------------
+<h2>Historias de usuario </h2>
 
 Metodología a utilizar: Extreme Programming (XP)
 
@@ -43,7 +45,7 @@ Como usuario se desea:
     
 ------------------------------------------------------------------------------
 
-------------------------------- Clases definidas -----------------------------
+<h2>Clases definidas </h2>
 
 Clase WebApp:
     *Encargada de la gestión de los procesos en entorno web, utili-
@@ -110,7 +112,7 @@ Clase ChartManage:
    
   -----------------------------------------------------------------------------    
 
-------------------------------- Librerías y recursos --------------------------
+<h2>Librerias y recursos </h2>
 
 	*Numpy
 	*matplotlib
